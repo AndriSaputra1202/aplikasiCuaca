@@ -124,7 +124,7 @@ window.addEventListener('DOMContentLoaded', () => {
         pesanDua.innerHTML = '';
         
         try {
-            const response = await fetch(`/infoCuaca?address=${(location)}`); //jadikan seperti ini -> ...${encodeURIComponent(location)}`);
+            const response = await fetch(`/infoCuaca?address=${encodeURIComponent(location)}`);
             const data = await response.json();
             
             if (data.err) {
