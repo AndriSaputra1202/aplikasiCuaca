@@ -5,6 +5,7 @@ const geocode = require('./utils/geocode');
 const forecast = require('./utils/prediksiCuaca');
 require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 
+const PORT = process.env.PORT || 3000
 
 const app = express();
 const publicDir = path.join(__dirname, '../public');
@@ -118,7 +119,12 @@ app.get('*', (_, res) => {
 });
 
 
+//Aktifkan ini 
+//app.listen(process.env.PORT, () => {
+//    console.log(`Server berjalan pada port ${process.env.PORT}.`);
+//})
 
-app.listen(process.env.PORT, () => {
+//Komen ini jika dijalankan di lokal
+app.listen(PORT, () => {
     console.log(`Server berjalan pada port ${process.env.PORT}.`);
 })
