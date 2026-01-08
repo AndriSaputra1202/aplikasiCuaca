@@ -3,7 +3,7 @@
 Aplikasi web fullstack berbasis **Node.js (Express)** yang menampilkan:
 - Prediksi cuaca berdasarkan lokasi (menggunakan API cuaca)
 - Berita terkini bertema **cuaca & iklim** (menggunakan Mediastack API)
-- Tampilan antarmuka responsif berbasis HTML, CSS, dan JavaScript.
+- Tampilan berbasis HTML, CSS, dan JavaScript.
 
 ---
 
@@ -23,13 +23,12 @@ Aplikasi web fullstack berbasis **Node.js (Express)** yang menampilkan:
 | Kategori | Teknologi / Library |
 |-----------|----------------------|
 | **Backend** | Node.js, Express.js |
-| **Frontend** | HTML, CSS, JavaScript (vanilla) |
+| **Frontend** | HTML, CSS, JavaScript |
 | **Template Engine** | Handlebars (HBS) |
 | **API Cuaca** | WeatherStack |
 | **API Berita** | Mediastack API |
 | **API Lokasi** | Nominatim API |
 | **Environment** | dotenv |
-| **Deployment** | Vercel |
 
 ---
 
@@ -58,8 +57,8 @@ project-root/<br>
 
 ### 1️. Clone Repository
 ```bash
-git clone https://github.com/hammPa/Aplikasi-Cek-Cuaca.git
-cd nama-repo
+git clone https://github.com/AndriSaputra1202/aplikasiCuaca.git
+cd aplikasiCuaca
 ```
 
 ### 2. Install Dependencies
@@ -68,7 +67,7 @@ npm install
 ```
 
 ### 3. Konfigurasi Environment
-Buat file .env di root proyek:
+Kemudian buat file .env di root proyek:
 ```bash
 PORT=4000
 MEDIA=https://api.mediastack.com
