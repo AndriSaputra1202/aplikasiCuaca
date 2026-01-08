@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+  {{> head }}
+<body>
+  <div class="main-content">
+    {{> header }}
+    <section class="faq-section">
+      <h1 class="faq-title">Pertanyaan yang Sering Diajukan (FAQ)</h1>
+      <br>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3 class="faq-question">Halaman ini digunakan untuk apa?</h3>
+          <div class="faq-answer">
+            <p>
+              Halaman ini berperan sebagai pusat bantuan yang dirancang untuk membantu pengguna memahami cara kerja serta fitur-fitur yang tersedia pada aplikasi. 
+              Melalui halaman ini, pengguna dapat menemukan penjelasan mengenai fungsi aplikasi, cara penggunaan, serta tujuan utama dari layanan yang disediakan.
+              <br>
+              <br>
+              Website ini berfokus pada penyediaan informasi cuaca terkini yang akurat dan relevan berdasarkan lokasi yang dimasukkan oleh pengguna. 
+              Dengan memasukkan nama daerah atau lokasi tertentu, pengguna dapat mengetahui kondisi cuaca saat ini, seperti suhu, keadaan langit, dan informasi pendukung lainnya, 
+              sehingga dapat membantu dalam merencanakan aktivitas sehari-hari dengan lebih baik.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Apa itu API?</h3>
+          <div class="faq-answer">
+            <p>
+              <strong><i>Application Programming Interface</i></strong> merupakan sebuah antarmuka atau perantara yang memungkinkan dua sistem atau aplikasi yang berbeda untuk saling berkomunikasi dan bertukar data. 
+              API menyediakan aturan serta mekanisme tertentu agar proses pertukaran informasi dapat dilakukan secara terstruktur dan aman.
+              <br>
+              <br>
+              Dalam aplikasi ini, API digunakan untuk mengambil data cuaca dari server eksternal yang khusus menyediakan informasi cuaca. Dengan memanfaatkan API, aplikasi tidak perlu menyimpan seluruh data cuaca di dalam sistemnya sendiri, 
+              sehingga penggunaan sumber daya menjadi lebih efisien. Selain itu, pendekatan ini memastikan bahwa informasi cuaca yang ditampilkan selalu terbaru, akurat, dan sesuai dengan kondisi terkini berdasarkan permintaan pengguna.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">API apa yang digunakan dalam aplikasi ini?</h3>
+          <div class="faq-answer">
+            <p>Aplikasi ini menggunakan dua API utama, yaitu:</p>
+            <ul>
+              <li><strong>OpenStreetMap Nominatim API</strong> untuk mendapatkan koordinat dari nama lokasi (geocoding).</li>
+              <li><strong>Weatherstack API</strong> untuk menampilkan data cuaca real-time berdasarkan koordinat tersebut.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Salah satu pola arsitektur API adalah RESTful</h3>
+          <div class="faq-answer">
+            <p>Aplikasi ini menggunakan arsitektur <strong>RESTful API</strong>, komunikasi antara server dan client
+            dilakukan melalui permintaan HTTP (seperti <em>GET</em> dan <em>POST</em>), serta data dikirim dalam format JSON.
+            RESTful dipilih karena ringan, cepat, dan mudah diintegrasikan ke aplikasi web modern.</p>
+            <img src="/img/restful.png" alt="Diagram Arsitektur RESTful API" class="faq-image">
+            <p style="text-align: center;">Gambar diatas menggambarkan alur kerja RESTful API antara client, API, dan server.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  {{> footer }}
+  <script src="/js/accordion.js"></script>
+</body>
+</html>
