@@ -72,9 +72,9 @@ Buat file .env di root proyek:
 ```bash
 PORT=4000
 MEDIA=https://api.mediastack.com
-MEDIA_API_KEY=api_media
+MEDIA_API_KEY=api mediastack kamu
 WEATHER=http://api.weatherstack.com
-API_KEY=api_weather
+API_KEY=api wetaherstack kamu
 MAP=https://nominatim.openstreetmap.org
 ```
 
